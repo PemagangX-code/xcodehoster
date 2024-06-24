@@ -189,7 +189,7 @@ if (defined('FM_EMBED')) {
     date_default_timezone_set($default_timezone);
 
     ini_set('default_charset', 'UTF-8');
-    if (version_compare(PHP_VERSION, '7.2.0', '<') && function_exists('mb_internal_encoding')) {
+    if (version_compare(PHP_VERSION, '8.3.0', '<') && function_exists('mb_internal_encoding')) {
         mb_internal_encoding('UTF-8');
     }
     if (function_exists('mb_regex_encoding')) {
